@@ -1,0 +1,29 @@
+alter table countries drop column phonecode;
+alter table countries drop column capital;
+alter table countries drop column currency;
+alter table countries drop column currency_name;
+alter table countries drop column currency_symbol;
+alter table countries drop column tld;
+alter table countries drop column native;
+alter table countries drop column region;
+alter table countries drop column subregion;
+alter table countries drop column timezones;
+alter table countries drop column emoji;
+alter table countries drop column emojiU;
+alter table countries drop created_at;
+alter table countries drop column updated_at;
+alter table countries drop column flag;
+alter table countries drop column wikiDataId;
+
+alter table states drop column type;
+alter table states drop column created_at;
+alter table states drop column updated_at;
+alter table states drop column flag;
+alter table states drop column wikiDataId;
+
+alter table cities drop column created_at;
+alter table cities drop column updated_at;
+alter table cities drop column flag;
+alter table cities drop column wikiDataId;
+
+VACUUM;
